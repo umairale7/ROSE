@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Rose’s Luxury — Michelin-Starred Dining, Washington D.C.</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap">
+<style>
+:root{--g:#c9a24b;--bg:#0b0907;--cr:#f6f0e4;--ink:#1c1712;--mu:#b8ac97;--ln:#2a2218;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,::before,::after{box-sizing:inherit}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:#efe7d8;font:400 .95rem/1.7 Montserrat,system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;margin:0;line-height:1.1}
+a{color:inherit;text-decoration:none;cursor:pointer}p{margin:0}em{color:var(--g)}svg{display:block}
+#hd{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;align-items:center;gap:1.5rem;padding:1rem 5vw;background:var(--bg);border-bottom:1px solid var(--ln)}
+.logo{font:500 1.7rem/1 "Cormorant Garamond",Georgia,serif;color:var(--g);letter-spacing:.1em;text-align:center}
+.logo small{display:block;font:500 .5rem Montserrat,sans-serif;letter-spacing:.55em;margin-top:.35rem}
+#nv{display:flex;gap:1.9rem;margin:0 auto}
+#nv a{font:500 .62rem Montserrat,sans-serif;letter-spacing:.18em;text-transform:uppercase;padding:.4rem 0;border-bottom:1px solid transparent}
+#nv a:hover,#nv a.on{color:var(--g);border-color:var(--g)}
+#nv .m2,.bg{display:none}
+.bg{background:none;border:0;color:var(--g);font-size:1.6rem;cursor:pointer;margin-left:auto}
+.btn{display:inline-block;font:600 .65rem Montserrat,sans-serif;letter-spacing:.17em;text-transform:uppercase;padding:1rem 1.7rem;border:1px solid var(--g);color:var(--g);background:none;cursor:pointer;transition:.25s}
+.btn:hover{background:var(--g);color:#17110a}
+.btn.f{background:var(--g);color:#17110a}.btn.f:hover{background:#e2bd6c}
+.btn.k{border-color:var(--ink);color:var(--ink)}.btn.k:hover{background:var(--ink);color:#fff}
+.lb{font:500 .66rem/1.9 Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--g)}
+.eb{display:block;margin-bottom:1.2rem}
+.ph{position:relative;display:grid;place-items:center;overflow:hidden;min-height:180px;background:radial-gradient(circle at 50% 55%,#3b2a17,#0e0a07 72%)}
+.bk{background:radial-gradient(circle,rgba(255,196,100,.85) 0 2px,transparent 3px) 0 0/44px 51px,radial-gradient(circle,rgba(255,180,80,.4) 0 5px,transparent 7px) 18px 22px/73px 69px,linear-gradient(165deg,#2b1e11,#0b0806)}
+.pl{width:80%;aspect-ratio:1}
+.pv{position:absolute;left:0;bottom:0;padding:.7rem 1.1rem;background:rgba(0,0,0,.62);font:500 .58rem/1.5 Montserrat,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--g)}
+.hero{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;min-height:620px;padding:4rem 5vw 5rem;overflow:hidden;background:radial-gradient(circle at 78% 35%,rgba(201,162,75,.24),transparent 42%),radial-gradient(circle at 8% 95%,rgba(201,162,75,.12),transparent 35%),var(--bg)}
+.hero h1{font-size:clamp(2.6rem,5.6vw,4.6rem)}
+.hero p{max-width:30rem;color:#e6dccb;margin:1.5rem 0 2rem}
+.bt{display:flex;gap:1rem;flex-wrap:wrap}
+.hp{width:min(100%,620px);aspect-ratio:1;justify-self:end;filter:drop-shadow(0 30px 40px #000)}
+.wt{position:absolute;right:5vw;bottom:2rem;display:flex;align-items:center;gap:.8rem;font:500 .6rem/1.5 Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+.wt i{display:grid;place-items:center;width:2.6rem;height:2.6rem;border:1px solid var(--g);border-radius:50%;color:var(--g);font-style:normal;font-size:.75rem}
+.ft{display:grid;grid-template-columns:repeat(4,1fr);background:#100d0a;border-block:1px solid var(--ln)}
+.ft a{display:block;padding:2rem 1.2rem;text-align:center;border-right:1px solid var(--ln);transition:.25s}.ft a:last-child{border:0}.ft a:hover{background:#17120d}
+.ft b{display:block;font:600 .66rem Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase;margin:.8rem 0 .3rem}
+.ft span{display:block;font-size:.76rem;color:var(--mu);line-height:1.5}
+.ic{width:2.6rem;height:2.6rem;margin:auto;color:var(--g);fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.cr{background:var(--cr);color:var(--ink)}
+.cr h2{font-size:2rem;letter-spacing:.06em;text-transform:uppercase}
+.sp{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center;padding:4rem 5vw}
+.sp.mn{grid-template-columns:.8fr 1fr}
+.sp .lb{margin:1rem 0 1.2rem}
+.tx{color:#4a4236;margin-bottom:1.8rem}
+.sg{padding:3rem 5vw;background:var(--cr);color:var(--ink)}
+.sh{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.sh h2{font-size:1.6rem;letter-spacing:.06em;text-transform:uppercase}
+.sh hr{width:4rem;border:0;border-top:1px solid var(--g);margin:0}
+.sh .lb{margin-left:auto;font-size:.56rem}
+.ar{display:flex;gap:.6rem}.ar button{width:2.2rem;height:2.2rem;border:1px solid var(--g);border-radius:50%;background:none;color:var(--g);cursor:pointer;transition:.2s}.ar button:hover{background:var(--g);color:#fff}
+#dr{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.dc{flex:1 0 min(250px,72vw);scroll-snap-align:start;background:#0f0b08;color:#efe7d8;transition:.3s}.dc:hover{transform:translateY(-4px)}
+.dc .ph{aspect-ratio:4/3}
+.dc b,.mi b,.rm b{display:block;font:600 .64rem Montserrat,sans-serif;letter-spacing:.16em;text-transform:uppercase}
+.dc b{padding:.9rem 1rem 0}.dc small{display:block;padding:.2rem 1rem 1rem;color:var(--mu);font-size:.72rem}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;padding:4rem 5vw}
+.cta h2{font-size:clamp(2rem,4vw,3rem)}.cta p{max-width:24rem;color:#d8ccb8;font-size:.85rem;margin-top:.8rem}
+.pb{position:relative;display:grid;place-items:center;text-align:center;min-height:300px;padding:4rem 5vw}
+.pb::before{content:"";position:absolute;inset:0;background:rgba(8,6,4,.52)}.pb>*{position:relative}
+.pb h1{font-size:clamp(2rem,5vw,3.2rem);letter-spacing:.1em;text-transform:uppercase}
+.pb p{max-width:28rem;color:#d8ccb8;font-size:.82rem;margin:.9rem auto 0}
+.pb.ab{place-items:end start;text-align:left;min-height:440px}.ai{max-width:32rem}.ai .lb{margin:1rem 0}.ai p:last-child{color:#e6dccb;font-size:.88rem}
+.tb{display:flex;justify-content:center;gap:3rem;padding:1.4rem 5vw 0;background:var(--cr);border-bottom:1px solid #ddd2bb}
+.tb button{font:600 .62rem Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase;border:0;background:none;color:#7a6f5d;padding:.8rem 0;border-bottom:2px solid transparent;cursor:pointer}
+.tb button.on,.tb button:hover{color:var(--ink);border-color:var(--g)}
+.sm{font:italic 1.2rem "Cormorant Garamond",Georgia,serif;margin:.8rem 0 .6rem}
+.mi{padding:.8rem 0;border-bottom:1px solid #e3d9c4}.mi span{font-size:.78rem;color:#6b6152}
+.cn{text-align:center;padding-top:1.8rem}
+.qs{display:grid;grid-template-columns:1fr 1fr}
+.qc{display:grid;align-content:center;justify-items:start;padding:3rem 5vw}
+.qt{font:italic 1.9rem/1.35 "Cormorant Garamond",Georgia,serif;max-width:22rem}
+.phl{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:760px;margin:1.5rem auto 0}
+.phl b{display:block;font:600 .6rem Montserrat,sans-serif;letter-spacing:.18em;text-transform:uppercase;margin-top:.6rem}.phl span{font-size:.72rem;color:#7a6f5d}
+.pi{text-align:center;max-width:42rem;margin:auto;padding:3.5rem 5vw 2.5rem}
+.rm{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;padding:1rem 5vw 4rem}
+.rm .ph{aspect-ratio:16/10}.rm b{margin-top:.8rem}.rm small{display:block;color:#6b6152;font-size:.76rem}.rm .lk{font-size:.68rem;color:var(--g)}
+.ct{display:grid;grid-template-columns:1fr 1.4fr;gap:3rem;padding:3.5rem 5vw;background:#0f0c09}
+.cd{display:flex;gap:1rem;margin-bottom:1.6rem;font-size:.85rem}
+.cd svg{width:1.5rem;height:1.5rem;flex:none;margin-top:.2rem;color:var(--g);fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cd b{display:block;font:600 .58rem Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--g)}
+.cd a:hover{color:var(--g)}.so a{display:inline-block;margin:.4rem 1rem 0 0}
+.mp{position:relative;display:grid;place-items:center;min-height:320px;border:1px solid var(--ln);background:linear-gradient(var(--ln) 1px,transparent 1px) 0 0/42px 42px,linear-gradient(90deg,var(--ln) 1px,transparent 1px) 0 0/42px 42px,#15110d}
+.mp svg{width:2.4rem;height:2.4rem;color:var(--g);fill:var(--g);stroke:#15110d;stroke-width:2}
+.mp span{position:absolute;top:calc(50% + 1.8rem);font:600 .55rem Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--g)}
+.ex{display:grid;place-items:center;min-height:260px;background:repeating-linear-gradient(0deg,rgba(0,0,0,.35) 0 2px,transparent 2px 24px),linear-gradient(#2d1d12,#0c0806)}
+.ex span{font:500 clamp(2rem,6vw,3.4rem)/1 "Cormorant Garamond",Georgia,serif;letter-spacing:.14em;color:var(--g);text-shadow:0 0 22px rgba(201,162,75,.7);text-transform:uppercase}
+#gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem}#gg .ph{aspect-ratio:4/3}
+footer{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center;padding:2.2rem 5vw;border-top:1px solid var(--ln);font-size:.72rem;color:var(--mu)}
+footer a:hover{color:var(--g)}
+.md{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:1rem;background:rgba(0,0,0,.76)}
+.bx{position:relative;width:min(440px,100%);max-height:92vh;overflow:auto;padding:2rem;background:var(--cr);color:var(--ink)}
+.bx h3{font-size:1.9rem;margin-bottom:1.2rem}
+.bx input,.bx select,.bx textarea{width:100%;margin-bottom:.8rem;padding:.8rem;border:1px solid #cfc3aa;background:#fff;color:var(--ink);font:inherit;font-size:.85rem}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.x{position:absolute;top:.5rem;right:1rem;border:0;background:none;font-size:1.7rem;color:var(--ink);cursor:pointer}
+@media(max-width:900px){#nv{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;padding:.5rem 5vw 1rem;background:var(--bg);border-bottom:1px solid var(--ln)}#nv.open{display:flex}#nv a{padding:.9rem 0}#nv .m2{display:block;color:var(--g)}.bg{display:block}#hd>.btn{display:none}.hero,.sp,.ct,.rm,.qs{grid-template-columns:1fr!important}.hp{justify-self:center;width:90%}.ft{grid-template-columns:1fr 1fr}.ft a:nth-child(2){border-right:0}.ft a{border-bottom:1px solid var(--ln)}.sh .lb{margin-left:0}.tb{gap:1.4rem}.wt{position:static;margin-top:2rem}.phl{gap:.4rem}}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="plate" viewBox="0 0 200 200"><ellipse cx="100" cy="116" rx="94" ry="62" fill="#e8dfcd"/><ellipse cx="100" cy="114" rx="74" ry="46" fill="#cfc4ad"/><ellipse cx="100" cy="112" rx="50" ry="28" fill="#b9792a" opacity=".85"/><ellipse cx="100" cy="92" rx="30" ry="24" fill="#c98a3c"/><ellipse cx="100" cy="82" rx="26" ry="14" fill="#f0c27a"/><g fill="#3d6b2e"><circle cx="96" cy="66" r="4"/><circle cx="107" cy="62" r="3"/><circle cx="88" cy="70" r="3"/></g><circle cx="113" cy="72" r="3" fill="#7a1f2b"/><g fill="#1a120b"><circle cx="70" cy="114" r="4"/><circle cx="132" cy="120" r="5"/><circle cx="116" cy="128" r="3"/></g></symbol>
+<symbol id="s1" viewBox="0 0 48 48"><circle cx="24" cy="24" r="4"/><circle cx="24" cy="12" r="6"/><circle cx="24" cy="36" r="6"/><circle cx="12" cy="24" r="6"/><circle cx="36" cy="24" r="6"/></symbol>
+<symbol id="s2" viewBox="0 0 48 48"><path d="M8 40C6 20 20 8 42 8c0 22-14 34-34 32zM8 40 30 18"/></symbol>
+<symbol id="s3" viewBox="0 0 48 48"><path d="M10 8h12l-1 12a5 5 0 0 1-10 0zM16 25v13M10 38h12M28 12h10l-1 9a4 4 0 0 1-8 0zM33 25v13M28 38h10"/></symbol>
+<symbol id="s4" viewBox="0 0 48 48"><path d="M17 6h14l1 14a8 8 0 0 1-16 0zM24 28v11M16 41h16"/></symbol>
+<symbol id="s5" viewBox="0 0 48 48"><path d="M24 44S10 30 10 19a14 14 0 0 1 28 0c0 11-14 25-14 25z"/><circle cx="24" cy="19" r="5"/></symbol>
+<symbol id="s6" viewBox="0 0 48 48"><path d="M13 7l7 1 3 9-5 4c3 6 7 10 13 13l4-5 9 3 1 7c0 2-2 4-4 4C22 43 5 26 6 11c0-2 3-4 7-4z"/></symbol>
+<symbol id="s7" viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M24 13v12l8 5"/></symbol>
+<symbol id="s8" viewBox="0 0 48 48"><rect x="8" y="8" width="32" height="32" rx="9"/><circle cx="24" cy="24" r="7"/><circle cx="33" cy="15" r="1"/></symbol>
+<symbol id="s9" viewBox="0 0 48 48"><path d="M28 42V26h5l1-6h-6v-4c0-2 1-3 3-3h3V8h-5c-5 0-7 3-7 7v5h-5v6h5v16z"/></symbol>
+</defs></svg>
+
+<header id="hd"><a class="logo" data-go="home" href="#home">ROSE’S<small>LUXURY</small></a>
+<nav id="nv"><a data-go="home" href="#home">Home</a><a data-go="about" href="#about">About</a><a data-go="menu" href="#menu">Menus</a><a data-go="private" href="#private">Private Dining</a><a data-go="gallery" href="#gallery">Gallery</a><a data-go="contact" href="#contact">Contact</a><a class="m2" data-r>Reserve a Table</a></nav>
+<button class="btn" data-r>Reserve a Table</button><button class="bg" data-nv aria-label="Menu">☰</button></header>
+
+<main>
+<section class="pg" id="home">
+<div class="hero"><div><small class="lb eb">Washington D.C.</small><h1>One Michelin Star.<br>One <em>Unforgettable</em> Evening.</h1><p>An intimate dining experience in the heart of Capitol Hill, where seasonal ingredients, thoughtful cooking and warm hospitality come together.</p><div class="bt"><button class="btn f" data-r>Reserve a Table →</button><button class="btn" data-go="menu" data-tab="tasting">View Tasting Menu</button></div></div><svg class="hp"><use href="#plate"/></svg><a class="wt" data-go="about"><i>▶</i><span>Watch<br>Our Story</span></a></div>
+<div class="ft"><a data-go="about"><svg class="ic"><use href="#s1"/></svg><b>Michelin Star</b><span>A recognized dining destination in Washington D.C.</span></a><a data-go="menu" data-tab="tasting"><svg class="ic"><use href="#s2"/></svg><b>Seasonal Menu</b><span>Ingredients at their peak, creatively prepared.</span></a><a data-go="private"><svg class="ic"><use href="#s3"/></svg><b>Private Dining</b><span>Intimate spaces for special occasions.</span></a><a data-go="menu" data-tab="wine"><svg class="ic"><use href="#s4"/></svg><b>Wine Pairing</b><span>A curated selection to elevate every course.</span></a></div>
+<div class="cr sp"><a class="ph" data-go="about" style="aspect-ratio:4/3"><svg class="pl" style="filter:hue-rotate(12deg)"><use href="#plate"/></svg><span class="pv">▶ A seasonal<br>culinary journey</span></a><div><h2>Our Story</h2><p class="lb">A neighborhood restaurant<br>with a global reputation</p><p class="tx">Rose’s Luxury is a Michelin-starred restaurant in Washington, D.C., known for its warm hospitality, seasonal menus, and creative, ingredient-driven cuisine. What began as a small neighborhood restaurant has grown into a beloved dining destination.</p><button class="btn k" data-go="about">Learn More →</button></div></div>
+<div class="sg"><div class="sh"><h2>Chef’s Signature Dishes</h2><hr><span class="lb">A seasonal culinary journey</span><div class="ar"><button data-sc="-1" aria-label="Previous">←</button><button data-sc="1" aria-label="Next">→</button></div></div><div id="dr"></div></div>
+<div class="cta bk"><div><h2>An Evening<br>to Remember</h2><p>Join us for an exceptional dining experience with remarkable food, wine, and hospitality.</p></div><button class="btn f" data-r>Reserve a Table →</button></div>
+</section>
+
+<section class="pg" id="menu" hidden>
+<div class="pb bk" style="background-position:10px 5px,40px 30px,0 0"><div><h1>Our Menus</h1><p>Seasonal ingredients. Global inspiration. An ever-evolving dining experience.</p></div></div>
+<div class="tb"><button data-tab="tasting">Tasting Menu</button><button data-tab="dinner">Dinner</button><button data-tab="wine">Wine List</button></div>
+<div class="cr sp mn"><div class="ph" style="aspect-ratio:3/4"><svg class="pl"><use href="#plate"/></svg></div><div><div id="ml"></div><div class="cn"><button class="btn k" data-tab="dinner">View Full Menu →</button></div></div></div>
+</section>
+
+<section class="pg" id="about" hidden>
+<div class="pb bk ab" style="background-position:30px 10px,10px 45px,0 0"><div class="ai"><h1>Our Story</h1><p class="lb">A neighborhood restaurant<br>with a global reputation</p><p>Rose’s Luxury is a Michelin-starred restaurant in Washington, D.C., known for its warm hospitality, seasonal menus, and creative, ingredient-driven cuisine. What began as a small neighborhood restaurant has grown into a beloved dining destination.</p></div></div>
+<div class="qs"><div class="ph" style="min-height:340px"><svg class="pl" style="filter:hue-rotate(20deg)"><use href="#plate"/></svg></div><div class="cr qc"><p class="qt">“Food is about people, places, and the moments we share together.”</p><svg viewBox="0 0 170 50" width="150" style="margin-top:1rem" fill="none" stroke="#6b5a3a" stroke-width="1.6"><path d="M6 40C20 4 32 4 26 30c-3 12 8 8 20-12 8-14 12 10 25 8s20-20 35-6 15 12 45 0"/></svg></div></div>
+<div class="cr" style="padding:2.5rem 5vw 4rem;text-align:center"><p class="lb" style="color:var(--ink)">Our Philosophy</p><div class="phl"><div><svg class="ic"><use href="#s2"/></svg><b>Seasonal Ingredients</b><span>Always Fresh</span></div><div><svg class="ic"><use href="#s1"/></svg><b>Creative Cuisine</b><span>Globally Inspired</span></div><div><svg class="ic"><use href="#s3"/></svg><b>Warm Hospitality</b><span>Everyone Welcome</span></div></div></div>
+</section>
+
+<section class="pg" id="private" hidden>
+<div class="pb bk" style="background-position:0 30px,35px 0,0 0"><div><h1>Private Dining</h1><p>Intimate spaces for special occasions, celebrations, and unforgettable experiences.</p></div></div>
+<div class="cr"><div class="pi"><p class="lb">A memorable setting<br>for life’s special moments</p><p class="tx" style="margin:1rem 0 1.6rem">Whether it’s a private dinner, a celebration with friends, or a corporate event, our team will create a personalized experience tailored to your needs.</p><button class="btn f" data-r="Private Dining Inquiry">Inquire Now →</button></div>
+<div class="rm"><div><a data-r="Inquire: The Dining Room"><div class="ph bk"></div></a><b>The Dining Room</b><small>Seated up to 40 guests</small><a class="lk" data-r="Inquire: The Dining Room">Learn More →</a></div><div><a data-r="Inquire: The Courtyard"><div class="ph bk" style="background-position:20px 10px,5px 40px,0 0"></div></a><b>The Courtyard</b><small>Seated up to 30 guests</small><a class="lk" data-r="Inquire: The Courtyard">Learn More →</a></div></div></div>
+</section>
+
+<section class="pg" id="gallery" hidden>
+<div class="pb bk" style="background-position:15px 40px,55px 10px,0 0"><div><h1>Gallery</h1><p>A glimpse of the plates, the rooms, and the evenings we share.</p></div></div>
+<div class="cr" style="padding:3rem 5vw 4rem"><div id="gg"></div></div>
+</section>
+
+<section class="pg" id="contact" hidden>
+<div class="pb bk" style="background-position:50px 20px,5px 60px,0 0"><div><h1>Get in Touch</h1><p>We look forward to welcoming you to Rose’s Luxury.</p></div></div>
+<div class="ct"><div>
+<div class="cd"><svg><use href="#s5"/></svg><div><b>Visit Us</b><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=717+8th+St+SE+Washington+DC+20003">717 8th St SE,<br>Washington, DC 20003</a></div></div>
+<div class="cd"><svg><use href="#s6"/></svg><div><b>Call Us</b><a href="tel:+12025809000">(202) 580-9000</a></div></div>
+<div class="cd"><svg><use href="#s7"/></svg><div><b>Hours</b>Dinner<br>Tue – Sun: 5:00 PM – 10:00 PM</div></div>
+<div class="cd"><div><b>Follow Us</b><div class="so"><a target="_blank" rel="noopener" href="https://www.instagram.com/" aria-label="Instagram"><svg><use href="#s8"/></svg></a><a target="_blank" rel="noopener" href="https://www.facebook.com/" aria-label="Facebook"><svg><use href="#s9"/></svg></a></div></div></div>
+</div><a class="mp" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=717+8th+St+SE+Washington+DC+20003"><svg><use href="#s5"/></svg><span>Rose’s Luxury</span></a></div>
+<div class="ex"><span>Rose’s Luxury</span></div>
+</section>
+</main>
+
+<footer><a class="logo" data-go="home" href="#home" style="font-size:1.3rem">ROSE’S<small>LUXURY</small></a><span>717 8th St SE, Washington, DC 20003 · (202) 580-9000</span><span><a data-go="menu" href="#menu">Menus</a> · <a data-go="private" href="#private">Private Dining</a> · <a data-go="contact" href="#contact">Contact</a></span><span>© 2026 Rose’s Luxury</span></footer>
+
+<div class="md" id="md" hidden><div class="bx"><button class="x" data-x aria-label="Close">×</button><h3 id="mt"></h3>
+<form id="fm"><input name="n" required placeholder="Full name" autocomplete="name"><input name="p" type="tel" required placeholder="Phone number" autocomplete="tel"><div class="r2"><input name="d" id="dt" type="date" required><select name="t"><option>5:00 PM</option><option>5:30 PM</option><option>6:00 PM</option><option>6:30 PM</option><option>7:00 PM</option><option>7:30 PM</option><option>8:00 PM</option><option>8:30 PM</option><option>9:00 PM</option></select></div><select name="g"><option>2 guests</option><option>1 guest</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option><option>8 guests</option><option>10+ guests</option></select><textarea name="s" rows="2" placeholder="Special requests (optional)"></textarea><button class="btn f" style="width:100%">Confirm Request</button></form>
+<div id="ok" hidden><p id="okt"></p><button class="btn f" data-x style="margin-top:1.2rem">Close</button></div></div></div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],P=["home","about","menu","private","gallery","contact"];
+const pl=h=>`<svg class="pl" style="filter:hue-rotate(${h}deg)"><use href="#plate"/></svg>`;
+const D=[["Seared Scallop","celery root, brown butter, hazelnut",0],["House Made Agnolotti","wild mushrooms, parmesan",30],["Duck Breast","cherry, turnip, jus",330],["Valrhona Chocolate","olive oil, sea salt, vanilla",190]];
+const G=[["The Dining Room","private"],["Seared Scallop","menu",0],["The Courtyard","private"],["Duck Breast","menu",330],["Chef’s Table","about",20],["Valrhona Chocolate","menu",190]];
+const M={tasting:["Tasting Menu","A curated experience","Sample Menu",[["Amuse Bouche","A seasonal beginning"],["Seared Scallop","celery root, brown butter, hazelnut"],["House Made Agnolotti","wild mushrooms, parmesan"],["Duck Breast","cherry, turnip, jus"],["Valrhona Chocolate","olive oil, sea salt, vanilla"]]],
+dinner:["Dinner Menu","À la carte","Seasonal selections",[["Heirloom Tomato","burrata, basil oil, sourdough"],["Seared Scallop","celery root, brown butter, hazelnut"],["House Made Agnolotti","wild mushrooms, parmesan"],["Duck Breast","cherry, turnip, jus"],["Dry-Aged Strip","bone marrow, charred onion"],["Valrhona Chocolate","olive oil, sea salt, vanilla"]]],
+wine:["Wine List","Curated by our sommelier","Pairings and favorites",[["Champagne","Brut Réserve, Reims"],["Chardonnay","Meursault, Burgundy"],["Pinot Noir","Willamette Valley, Oregon"],["Barolo","Serralunga d’Alba, Piedmont"],["Sauternes","Bordeaux, France"]]]};
+$("#dr").innerHTML=D.map(d=>`<a class="dc" data-go="menu" data-tab="tasting"><div class="ph">${pl(d[2])}</div><b>${d[0]}</b><small>${d[1]}</small></a>`).join("");
+$("#gg").innerHTML=G.map(g=>`<a class="ph${g[2]==null?" bk":""}" data-go="${g[1]}">${g[2]==null?"":pl(g[2])}<span class="pv">${g[0]}</span></a>`).join("");
+$$("a[data-go]").forEach(a=>a.href="#"+a.dataset.go);
+const md=$("#md"),fm=$("#fm");
+function go(p){if(!P.includes(p))p="home";$$(".pg").forEach(s=>s.hidden=s.id!=p);$$("#nv a[data-go]").forEach(a=>a.classList.toggle("on",a.dataset.go==p));$("#nv").classList.remove("open");scrollTo(0,0);try{history.replaceState(null,"","#"+p)}catch(_){}}
+function tab(k){const m=M[k];$$(".tb button").forEach(b=>b.classList.toggle("on",b.dataset.tab==k));$("#ml").innerHTML=`<h2>${m[0]}</h2><p class="lb" style="margin-top:.6rem">${m[1]}</p><p class="sm">${m[2]}</p>${m[3].map(i=>`<div class="mi"><b>${i[0]}</b><span>${i[1]}</span></div>`).join("")}`}
+function rsv(t){$("#mt").textContent=t;fm.hidden=false;$("#ok").hidden=true;fm.reset();$("#dt").min=$("#dt").value=new Date().toISOString().slice(0,10);md.hidden=false}
+fm.onsubmit=e=>{e.preventDefault();const f=fm.elements;$("#okt").textContent="Thank you, "+f.n.value+". We have received your request for "+f.g.value+" on "+f.d.value+" at "+f.t.value+". Our team will contact you shortly to confirm.";fm.hidden=true;$("#ok").hidden=false};
+document.addEventListener("click",e=>{const t=e.target.closest("[data-go],[data-r],[data-tab],[data-sc],[data-nv],[data-x]"),d=t&&t.dataset;if(e.target===md)md.hidden=true;if(!t)return;e.preventDefault();
+if(t.hasAttribute("data-x"))md.hidden=true;
+else if(t.hasAttribute("data-nv"))$("#nv").classList.toggle("open");
+else if(t.hasAttribute("data-sc"))$("#dr").scrollBy({left:d.sc*270,behavior:"smooth"});
+else if(t.hasAttribute("data-r"))rsv(d.r||"Reserve a Table");
+else{if(d.tab)tab(d.tab);if(d.go)go(d.go);else if(!t.closest(".tb"))$("#ml").scrollIntoView({behavior:"smooth"})}});
+addEventListener("keydown",e=>{if(e.key=="Escape")md.hidden=true});
+addEventListener("hashchange",()=>go(location.hash.slice(1)));
+tab("tasting");go(location.hash.slice(1)||"home");
+</script>
+</body></html>
